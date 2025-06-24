@@ -5,6 +5,7 @@ body {
 
 .like-glyph {
   cursor: pointer;
+  font-size: 24px;
 }
 
 body h1 {
@@ -44,13 +45,23 @@ article.media-post > footer ul {
   background-color: maroon;
   color: white;
 
-  margin: 1em;
+  margin: 1em auto;
   padding: 1em;
 
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  min-width: 300px;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 0 10px black;
+}
+
+/* Start hidden */
+.hidden {
+  display: none;
 }
 
 #modal p {
@@ -59,8 +70,4 @@ article.media-post > footer ul {
 
 .activated-heart {
   color: red;
-}
-
-.hidden {
-  visibility: hidden;
 }
